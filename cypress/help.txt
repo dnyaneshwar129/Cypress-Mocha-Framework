@@ -1,0 +1,21 @@
+Open cypress runner
+
+./node_modules/.bin/cypress open
+
+// run all test
+node_modules\.bin\cypress run
+
+// run specific test
+node_modules\.bin\cypress run --spec 'D:\Cypress_Automation\cypress\integration\my-work\firstTest.js'
+
+//// run all on Chrome Browser
+node_modules\.bin\cypress run --browser chrome
+
+-----
+7 folder structure
+
+
+https://www.w3schools.com/css/css_selectors.asp
+
+https://www.w3schools.com/cssref/css_selectors.asp
+
