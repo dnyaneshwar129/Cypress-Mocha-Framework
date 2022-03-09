@@ -7,7 +7,7 @@ describe('Custome Command', function () {
     
         it('Custome Command login', function()
         {
-            cy.login('admin@yourstore.com', 'admin')
+            cy.login('admin@yourstore.com', 'admin') // this command funtion is defined in support folder command file
             cy.title().should('be.equal', 'Dashboard / nopCommerce administration')
             cy.log('This is for Custome Command login')
 
