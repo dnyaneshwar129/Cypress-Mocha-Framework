@@ -1,17 +1,41 @@
 /// <reference types="cypress" />
 
-describe('Hooks Conpeots', function () {
-    it('Verify Text box', function () {
-        cy.visit("https://www.functionize.com/free-trial")
-        cy.url().should('include', 'functionize')   //verify URLshould include
-        cy.get('[name="firstname"]').should('be.visible').should('be.enabled').type("Test Name")
-        cy.get('[name="phone"]').should('be.visible').should('be.enabled').type("12334567")
-        //         cy.title().should("eq", "This is test")   //titile verification
-        cy.get('[value="No"]').should("be.visible").should('not.be.checked').click()
-        cy.get('[value="Enterprise Packaged App Testing with AI (Salesforce, Workday, SAP)"]').click()
+describe('Hooks Concept', function () {
+    before(() => {
+        // runs once before all tests in the block
+        cy.log('Open Browser and Set URL')
+      })
+    
+      beforeEach(() => {
+        // runs before each test in the block
+        cy.log('Login to system')
+      })
+    
+      afterEach(() => {
+        // runs after each test in the block
+        cy.log('Logout')
+      })
+    
+      after(() => {
+        // runs once after all tests in the block
+        cy.log('Close Browser')
+      })
+
+
+    it('Verify Edit Profile', function () {
+        cy.log('Edit profile')
     }
     )
 
+    it('Place order', function () {
+        cy.log('Place order')
+    }
+    )
+
+   it('Delete Product', function () {
+        cy.log('Delete Product')
+    }
+    )
 
 
 
