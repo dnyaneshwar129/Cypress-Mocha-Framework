@@ -16,7 +16,7 @@ describe('Alert handling Testing', function () {
         )
 
     }
-    )
+    )// It End  for simple alert
 
     it('Verifiy confirmatio  Okay cancel Alert', function () {
 
