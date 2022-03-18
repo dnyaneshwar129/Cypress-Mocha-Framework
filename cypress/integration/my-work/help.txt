@@ -1,0 +1,2 @@
+//run on cmd
+project loction:  node_modules\.bin\cypress run 

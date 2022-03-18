@@ -30,7 +30,6 @@ class LoginPage
         
     }
 
-   
 
 }
-export default LoginPage  // for accessing this calss in test cases
+export default LoginPage  // for accessing this class in test cases
